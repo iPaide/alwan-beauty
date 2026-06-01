@@ -1,9 +1,10 @@
 services:
-  - type: static
+  - type: web
     name: alwan-beauty-demo
+    runtime: static
     plan: free
-    buildCommand: ""
-    staticPublishPath: outputs/alwan-beauty-demo
+    buildCommand: echo "No build needed"
+    staticPublishPath: ./outputs/alwan-beauty-demo
     routes:
       - type: rewrite
         source: /*
