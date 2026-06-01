@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: alwan-beauty-demo
+    plan: free
+    buildCommand: ""
+    staticPublishPath: outputs/alwan-beauty-demo
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
